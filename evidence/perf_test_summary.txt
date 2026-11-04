@@ -1,0 +1,21 @@
+Assignment 02 - SMS Sensor Monitoring System
+Test: Linux perf stat
+
+Command:
+perf stat -e task-clock,context-switches,cpu-migrations,page-faults \
+  -- ./test_host/sms_app_test -i 100 -t 3 -v
+
+Results:
+- Application ran for approximately 3 seconds.
+- Application exited normally.
+- Sensor and Processor threads processed CSV test data.
+- task-clock: 8.37 msec
+- context-switches: 105
+- cpu-migrations: 13
+- page-faults: 81
+- elapsed time: 3.011128826 seconds
+
+Note:
+This test used a host-side CSV simulator, not the actual
+/dev/sms_sensor device. The ioctl warning is expected.
+Results describe this test run and are not QEMU measurements.

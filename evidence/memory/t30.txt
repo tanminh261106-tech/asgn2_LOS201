@@ -1,0 +1,2 @@
+VmSize:	  166636 kB
+VmRSS:	    2092 kB

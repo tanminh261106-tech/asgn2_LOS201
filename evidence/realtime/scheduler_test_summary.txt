@@ -1,0 +1,26 @@
+Assignment 02 - Scheduler Test
+
+Environment:
+Ubuntu host
+Test program: realtime/jitter_test
+Period: 1 ms
+Samples: 1000
+
+SCHED_OTHER:
+The existing scheduler check reported SCHED_OTHER
+with priority 0 for the inspected process.
+
+SCHED_FIFO:
+Command used:
+sudo chrt -f 50 ./realtime/jitter_test FIFO /tmp/jitter_fifo_chrt.csv
+
+Observed output:
+mlockall: success
+Policy: FIFO
+Samples: 1000
+Minimum jitter: 7716 ns
+Maximum jitter: 100349 ns
+Average jitter: 33440.09 ns
+
+Note:
+Measurements were performed on the Ubuntu host, not on the QEMU target.

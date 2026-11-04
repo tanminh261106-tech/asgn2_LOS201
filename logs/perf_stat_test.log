@@ -1,0 +1,79 @@
+ioctl SMS_SET_INTERVAL: Inappropriate ioctl for device
+SMS Sensor Monitoring System
+Interval: 100 ms
+Duration: limited
+[SENSOR] t=12345 temp=25.0 humidity=50.0
+[PROCESSOR] avg_temp=25.00 avg_humidity=50.00
+[SENSOR] t=12345 temp=25.0 humidity=50.0
+[PROCESSOR] avg_temp=25.00 avg_humidity=50.00
+[SENSOR] t=12345 temp=25.0 humidity=50.0
+[PROCESSOR] avg_temp=25.00 avg_humidity=50.00
+[SENSOR] t=12345 temp=25.0 humidity=50.0
+[PROCESSOR] avg_temp=25.00 avg_humidity=50.00
+[SENSOR] t=12345 temp=25.0 humidity=50.0
+[PROCESSOR] avg_temp=25.00 avg_humidity=50.00
+[SENSOR] t=12345 temp=25.0 humidity=50.0
+[PROCESSOR] avg_temp=25.00 avg_humidity=50.00
+[SENSOR] t=12345 temp=25.0 humidity=50.0
+[PROCESSOR] avg_temp=25.00 avg_humidity=50.00
+[SENSOR] t=12345 temp=25.0 humidity=50.0
+[PROCESSOR] avg_temp=25.00 avg_humidity=50.00
+[SENSOR] t=12345 temp=25.0 humidity=50.0
+[PROCESSOR] avg_temp=25.00 avg_humidity=50.00
+[SENSOR] t=12345 temp=25.0 humidity=50.0
+[PROCESSOR] avg_temp=25.00 avg_humidity=50.00
+[SENSOR] t=12345 temp=25.0 humidity=50.0
+[PROCESSOR] avg_temp=25.00 avg_humidity=50.00
+[SENSOR] t=12345 temp=25.0 humidity=50.0
+[PROCESSOR] avg_temp=25.00 avg_humidity=50.00
+[SENSOR] t=12345 temp=25.0 humidity=50.0
+[PROCESSOR] avg_temp=25.00 avg_humidity=50.00
+[SENSOR] t=12345 temp=25.0 humidity=50.0
+[PROCESSOR] avg_temp=25.00 avg_humidity=50.00
+[SENSOR] t=12345 temp=25.0 humidity=50.0
+[PROCESSOR] avg_temp=25.00 avg_humidity=50.00
+[SENSOR] t=12345 temp=25.0 humidity=50.0
+[PROCESSOR] avg_temp=25.00 avg_humidity=50.00
+[SENSOR] t=12345 temp=25.0 humidity=50.0
+[PROCESSOR] avg_temp=25.00 avg_humidity=50.00
+[SENSOR] t=12345 temp=25.0 humidity=50.0
+[PROCESSOR] avg_temp=25.00 avg_humidity=50.00
+[SENSOR] t=12345 temp=25.0 humidity=50.0
+[PROCESSOR] avg_temp=25.00 avg_humidity=50.00
+[SENSOR] t=12345 temp=25.0 humidity=50.0
+[PROCESSOR] avg_temp=25.00 avg_humidity=50.00
+[SENSOR] t=12345 temp=25.0 humidity=50.0
+[PROCESSOR] avg_temp=25.00 avg_humidity=50.00
+[SENSOR] t=12345 temp=25.0 humidity=50.0
+[PROCESSOR] avg_temp=25.00 avg_humidity=50.00
+[SENSOR] t=12345 temp=25.0 humidity=50.0
+[PROCESSOR] avg_temp=25.00 avg_humidity=50.00
+[SENSOR] t=12345 temp=25.0 humidity=50.0
+[PROCESSOR] avg_temp=25.00 avg_humidity=50.00
+[SENSOR] t=12345 temp=25.0 humidity=50.0
+[PROCESSOR] avg_temp=25.00 avg_humidity=50.00
+[SENSOR] t=12345 temp=25.0 humidity=50.0
+[PROCESSOR] avg_temp=25.00 avg_humidity=50.00
+[SENSOR] t=12345 temp=25.0 humidity=50.0
+[PROCESSOR] avg_temp=25.00 avg_humidity=50.00
+[SENSOR] t=12345 temp=25.0 humidity=50.0
+[PROCESSOR] avg_temp=25.00 avg_humidity=50.00
+[SENSOR] t=12345 temp=25.0 humidity=50.0
+[PROCESSOR] avg_temp=25.00 avg_humidity=50.00
+[SENSOR] t=12345 temp=25.0 humidity=50.0
+[PROCESSOR] avg_temp=25.00 avg_humidity=50.00
+SMS application stopped.
+
+ Performance counter stats for './test_host/sms_app_test -i 100 -t 3 -v':
+
+              8.37 msec task-clock                                                            
+               105      context-switches                                                      
+                13      cpu-migrations                                                        
+                81      page-faults                                                           
+
+       3.011128826 seconds time elapsed
+
+       0.004654000 seconds user
+       0.006982000 seconds sys
+
+

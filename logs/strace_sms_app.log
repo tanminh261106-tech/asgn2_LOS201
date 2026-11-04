@@ -1,0 +1,771 @@
+33682 17:20:00.376901 execve("./test_host/sms_app_test", ["./test_host/sms_app_test", "-i", "100", "-t", "3", "-v"], 0x7ffeefe8d148 /* 54 vars */) = 0
+33682 17:20:00.380549 brk(NULL)         = 0x56e25a7b5000
+33682 17:20:00.380827 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7e83b7b3d000
+33682 17:20:00.381636 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+33682 17:20:00.382134 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+33682 17:20:00.383691 fstat(3, {st_mode=S_IFREG|0644, st_size=70607, ...}) = 0
+33682 17:20:00.384083 mmap(NULL, 70607, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7e83b7b2b000
+33682 17:20:00.384240 close(3)          = 0
+33682 17:20:00.384378 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+33682 17:20:00.384703 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0 \250\2\0\0\0\0\0"..., 832) = 832
+33682 17:20:00.384873 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 840, 64) = 840
+33682 17:20:00.384981 fstat(3, {st_mode=S_IFREG|0755, st_size=2190608, ...}) = 0
+33682 17:20:00.385081 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 840, 64) = 840
+33682 17:20:00.385183 mmap(NULL, 2231696, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7e83b7800000
+33682 17:20:00.385292 mmap(0x7e83b7828000, 1671168, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7e83b7828000
+33682 17:20:00.385420 mmap(0x7e83b79c0000, 319488, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c0000) = 0x7e83b79c0000
+33682 17:20:00.385543 mmap(0x7e83b7a0e000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x20e000) = 0x7e83b7a0e000
+33682 17:20:00.385700 mmap(0x7e83b7a14000, 52624, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7e83b7a14000
+33682 17:20:00.385850 close(3)          = 0
+33682 17:20:00.385982 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7e83b7b28000
+33682 17:20:00.386105 arch_prctl(ARCH_SET_FS, 0x7e83b7b28740) = 0
+33682 17:20:00.386204 set_tid_address(0x7e83b7b28d68) = 33682
+33682 17:20:00.386304 set_robust_list(0x7e83b7b28a20, 24) = 0
+33682 17:20:00.386404 rseq(0x7e83b7b28680, 0x21, 0, 0x53053053) = 0
+33682 17:20:00.386698 mprotect(0x7e83b7a0e000, 16384, PROT_READ) = 0
+33682 17:20:00.386853 mprotect(0x56e21ffaf000, 4096, PROT_READ) = 0
+33682 17:20:00.386967 mprotect(0x7e83b7b82000, 8192, PROT_READ) = 0
+33682 17:20:00.387122 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+33682 17:20:00.387282 getrandom("\x18\xa9\x54\xb0\x19\x03\x3f\xee", 8, GRND_NONBLOCK) = 8
+33682 17:20:00.387429 munmap(0x7e83b7b2b000, 70607) = 0
+33682 17:20:00.387626 rt_sigaction(SIGINT, {sa_handler=0x56e21ffac6c9, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7e83b7845cb0}, NULL, 8) = 0
+33682 17:20:00.387760 rt_sigaction(SIGTERM, {sa_handler=0x56e21ffac6c9, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7e83b7845cb0}, NULL, 8) = 0
+33682 17:20:00.387880 fstat(1, {st_mode=S_IFREG|0664, st_size=0, ...}) = 0
+33682 17:20:00.387992 brk(NULL)         = 0x56e25a7b5000
+33682 17:20:00.388092 brk(0x56e25a7d7000) = 0x56e25a7d7000
+33682 17:20:00.388286 mq_open("sms_alert_queue", O_RDWR|O_CREAT, 0600, {mq_flags=0, mq_maxmsg=10, mq_msgsize=256, mq_curmsgs=0}) = 3
+33682 17:20:00.388490 mq_open("sms_log_queue", O_RDWR|O_CREAT, 0600, {mq_flags=0, mq_maxmsg=10, mq_msgsize=256, mq_curmsgs=0}) = 4
+33682 17:20:00.388611 rt_sigaction(SIGRT_1, {sa_handler=0x7e83b78a0fe0, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7e83b7845cb0}, NULL, 8) = 0
+33682 17:20:00.388716 rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+33682 17:20:00.388817 mmap(NULL, 8392704, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7e83b6fff000
+33682 17:20:00.388921 madvise(0x7e83b6fff000, 4096, MADV_GUARD_INSTALL) = 0
+33682 17:20:00.389045 rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0
+33682 17:20:00.389154 clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7e83b77ffce8, parent_tid=0x7e83b77ff990, exit_signal=0, stack=0x7e83b6fff000, stack_size=0x7fff80, tls=0x7e83b77ff6c0} => {parent_tid=[33683]}, 88) = 33683
+33682 17:20:00.389481 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+33683 17:20:00.389579 rseq(0x7e83b77ff600, 0x21, 0, 0x53053053 <unfinished ...>
+33682 17:20:00.389617 mmap(NULL, 8392704, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7e83b67fe000
+33683 17:20:00.389700 <... rseq resumed>) = 0
+33682 17:20:00.389729 madvise(0x7e83b67fe000, 4096, MADV_GUARD_INSTALL) = 0
+33683 17:20:00.389813 set_robust_list(0x7e83b77ff9a0, 24 <unfinished ...>
+33682 17:20:00.389842 rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0
+33683 17:20:00.389928 <... set_robust_list resumed>) = 0
+33682 17:20:00.389961 clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7e83b6ffece8, parent_tid=0x7e83b6ffe990, exit_signal=0, stack=0x7e83b67fe000, stack_size=0x7fff80, tls=0x7e83b6ffe6c0} <unfinished ...>
+33683 17:20:00.390037 rt_sigprocmask(SIG_SETMASK, [] <unfinished ...>
+33682 17:20:00.390107 <... clone3 resumed> => {parent_tid=[33684]}, 88) = 33684
+33683 17:20:00.390150 <... rt_sigprocmask resumed>, NULL, 8) = 0
+33682 17:20:00.390183 rt_sigprocmask(SIG_SETMASK, [] <unfinished ...>
+33683 17:20:00.390229 mmap(NULL, 134217728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+33682 17:20:00.390265 <... rt_sigprocmask resumed>, NULL, 8) = 0
+33684 17:20:00.390293 rseq(0x7e83b6ffe600, 0x21, 0, 0x53053053 <unfinished ...>
+33682 17:20:00.390323 mmap(NULL, 8392704, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+33683 17:20:00.390349 <... mmap resumed>) = 0x7e83ae600000
+33682 17:20:00.390378 <... mmap resumed>) = 0x7e83addff000
+33684 17:20:00.390430 <... rseq resumed>) = 0
+33682 17:20:00.390461 madvise(0x7e83addff000, 4096, MADV_GUARD_INSTALL <unfinished ...>
+33683 17:20:00.390486 munmap(0x7e83ae600000, 27262976 <unfinished ...>
+33682 17:20:00.390515 <... madvise resumed>) = 0
+33684 17:20:00.390546 set_robust_list(0x7e83b6ffe9a0, 24 <unfinished ...>
+33683 17:20:00.390571 <... munmap resumed>) = 0
+33682 17:20:00.390597 rt_sigprocmask(SIG_BLOCK, ~[] <unfinished ...>
+33683 17:20:00.390631 munmap(0x7e83b4000000, 39845888 <unfinished ...>
+33682 17:20:00.390663 <... rt_sigprocmask resumed>, [], 8) = 0
+33684 17:20:00.390695 <... set_robust_list resumed>) = 0
+33682 17:20:00.390723 clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7e83ae5ffce8, parent_tid=0x7e83ae5ff990, exit_signal=0, stack=0x7e83addff000, stack_size=0x7fff80, tls=0x7e83ae5ff6c0} <unfinished ...>
+33684 17:20:00.390767 rt_sigprocmask(SIG_SETMASK, [] <unfinished ...>
+33683 17:20:00.390814 <... munmap resumed>) = 0
+33684 17:20:00.390861 <... rt_sigprocmask resumed>, NULL, 8) = 0
+33682 17:20:00.390894 <... clone3 resumed> => {parent_tid=[33685]}, 88) = 33685
+33683 17:20:00.390934 mprotect(0x7e83b0000000, 135168, PROT_READ|PROT_WRITE <unfinished ...>
+33682 17:20:00.390968 rt_sigprocmask(SIG_SETMASK, [] <unfinished ...>
+33685 17:20:00.390999 rseq(0x7e83ae5ff600, 0x21, 0, 0x53053053 <unfinished ...>
+33684 17:20:00.391027 mq_timedreceive(3 <unfinished ...>
+33682 17:20:00.391059 <... rt_sigprocmask resumed>, NULL, 8) = 0
+33685 17:20:00.391084 <... rseq resumed>) = 0
+33683 17:20:00.391107 <... mprotect resumed>) = 0
+33682 17:20:00.391136 mmap(NULL, 8392704, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+33685 17:20:00.391169 set_robust_list(0x7e83ae5ff9a0, 24 <unfinished ...>
+33682 17:20:00.391198 <... mmap resumed>) = 0x7e83b5ffd000
+33683 17:20:00.391221 openat(AT_FDCWD, "/tmp/sms.log", O_WRONLY|O_CREAT|O_APPEND, 0666 <unfinished ...>
+33682 17:20:00.391264 madvise(0x7e83b5ffd000, 4096, MADV_GUARD_INSTALL <unfinished ...>
+33685 17:20:00.391289 <... set_robust_list resumed>) = 0
+33682 17:20:00.391338 <... madvise resumed>) = 0
+33683 17:20:00.391364 <... openat resumed>) = 5
+33682 17:20:00.391407 rt_sigprocmask(SIG_BLOCK, ~[] <unfinished ...>
+33685 17:20:00.391447 rt_sigprocmask(SIG_SETMASK, [] <unfinished ...>
+33682 17:20:00.391489 <... rt_sigprocmask resumed>, [], 8) = 0
+33683 17:20:00.391521 lseek(5, 0, SEEK_END <unfinished ...>
+33682 17:20:00.391553 clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7e83b67fdce8, parent_tid=0x7e83b67fd990, exit_signal=0, stack=0x7e83b5ffd000, stack_size=0x7fff80, tls=0x7e83b67fd6c0} <unfinished ...>
+33685 17:20:00.391590 <... rt_sigprocmask resumed>, NULL, 8) = 0
+33683 17:20:00.391621 <... lseek resumed>) = 0
+33685 17:20:00.391650 futex(0x56e21ffb06d8, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+33683 17:20:00.391704 mq_timedreceive(4 <unfinished ...>
+33682 17:20:00.391738 <... clone3 resumed> => {parent_tid=[33686]}, 88) = 33686
+33682 17:20:00.391808 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+33686 17:20:00.391902 rseq(0x7e83b67fd600, 0x21, 0, 0x53053053 <unfinished ...>
+33682 17:20:00.391934 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=3, tv_nsec=0} <unfinished ...>
+33686 17:20:00.391990 <... rseq resumed>) = 0
+33686 17:20:00.392046 set_robust_list(0x7e83b67fd9a0, 24) = 0
+33686 17:20:00.392141 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+33686 17:20:00.392247 openat(AT_FDCWD, "/tmp/sms_sensor_test.csv", O_RDWR) = 6
+33686 17:20:00.392385 ioctl(6, _IOC(_IOC_WRITE, 0x53, 0x1, 0x4), 0x7e83b67fcdac) = -1 ENOTTY (Inappropriate ioctl for device)
+33686 17:20:00.392535 dup(2)            = 7
+33686 17:20:00.392632 fcntl(7, F_GETFL) = 0x8001 (flags O_WRONLY|O_LARGEFILE)
+33686 17:20:00.392730 close(7)          = 0
+33686 17:20:00.392827 mmap(NULL, 134217728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7e83a5c00000
+33686 17:20:00.392962 munmap(0x7e83a5c00000, 37748736) = 0
+33686 17:20:00.393076 munmap(0x7e83ac000000, 29360128) = 0
+33686 17:20:00.393284 mprotect(0x7e83a8000000, 135168, PROT_READ|PROT_WRITE) = 0
+33686 17:20:00.393618 write(2, "ioctl SMS_SET_INTERVAL: Inapprop"..., 55) = 55
+33686 17:20:00.393902 close(6)          = 0
+33686 17:20:00.394148 mq_timedsend(4, "Sensor thread started; interval="..., 39, 0, NULL) = 0
+33686 17:20:00.394341 openat(AT_FDCWD, "/tmp/sms_sensor_test.csv", O_RDONLY <unfinished ...>
+33683 17:20:00.394411 <... mq_timedreceive resumed>, "Sensor thread started; interval="..., 256, NULL, {tv_sec=1793701201, tv_nsec=391672235}) = 39
+33686 17:20:00.394476 <... openat resumed>) = 6
+33686 17:20:00.394533 read(6 <unfinished ...>
+33683 17:20:00.394576 fstat(5 <unfinished ...>
+33686 17:20:00.394604 <... read resumed>, "1730000000,25,50\n", 127) = 17
+33686 17:20:00.394662 close(6 <unfinished ...>
+33683 17:20:00.394702 <... fstat resumed>, {st_mode=S_IFREG|0664, st_size=0, ...}) = 0
+33686 17:20:00.394747 <... close resumed>) = 0
+33686 17:20:00.394805 futex(0x56e21ffb06d8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+33683 17:20:00.394864 lseek(5, 0, SEEK_END <unfinished ...>
+33686 17:20:00.394894 <... futex resumed>) = 1
+33685 17:20:00.394922 <... futex resumed>) = 0
+33686 17:20:00.394956 mq_timedsend(4, "SENSOR,1730000000,25.0,50.0\0", 28, 0, NULL <unfinished ...>
+33685 17:20:00.394998 futex(0x56e21ffb0690, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+33683 17:20:00.395024 <... lseek resumed>) = 0
+33686 17:20:00.395055 <... mq_timedsend resumed>) = 0
+33685 17:20:00.395078 <... futex resumed>) = 0
+33686 17:20:00.395106 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=100000000} <unfinished ...>
+33685 17:20:00.395149 mq_timedsend(4, "AVERAGE,25.00,50.00\0", 20, 0, NULL <unfinished ...>
+33683 17:20:00.395190 mq_timedreceive(4 <unfinished ...>
+33685 17:20:00.395263 <... mq_timedsend resumed>) = 0
+33683 17:20:00.395291 <... mq_timedreceive resumed>, "SENSOR,1730000000,25.0,50.0\0", 256, NULL, {tv_sec=1793701201, tv_nsec=395108876}) = 28
+33685 17:20:00.395332 futex(0x56e21ffb06dc, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+33683 17:20:00.395422 lseek(5, 0, SEEK_END) = 0
+33683 17:20:00.395535 mq_timedreceive(4, "AVERAGE,25.00,50.00\0", 256, NULL, {tv_sec=1793701201, tv_nsec=395510461}) = 20
+33683 17:20:00.395651 lseek(5, 0, SEEK_END) = 0
+33683 17:20:00.395754 mq_timedreceive(4 <unfinished ...>
+33686 17:20:00.495293 <... clock_nanosleep resumed>, NULL) = 0
+33686 17:20:00.495553 openat(AT_FDCWD, "/tmp/sms_sensor_test.csv", O_RDONLY) = 6
+33686 17:20:00.495937 read(6, "1730000000,25,50\n", 127) = 17
+33686 17:20:00.496056 close(6)          = 0
+33686 17:20:00.496143 futex(0x56e21ffb06dc, FUTEX_WAKE_PRIVATE, 1) = 1
+33686 17:20:00.496228 mq_timedsend(4, "SENSOR,1730000000,25.0,50.0\0", 28, 0, NULL) = 0
+33686 17:20:00.496312 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=100000000} <unfinished ...>
+33685 17:20:00.496341 <... futex resumed>) = 0
+33683 17:20:00.496363 <... mq_timedreceive resumed>, "SENSOR,1730000000,25.0,50.0\0", 256, NULL, {tv_sec=1793701201, tv_nsec=395733739}) = 28
+33685 17:20:00.496407 futex(0x56e21ffb0690, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+33683 17:20:00.496492 lseek(5, 0, SEEK_END <unfinished ...>
+33685 17:20:00.496519 <... futex resumed>) = 0
+33683 17:20:00.496601 <... lseek resumed>) = 0
+33685 17:20:00.496656 mq_timedsend(4, "AVERAGE,25.00,50.00\0", 20, 0, NULL <unfinished ...>
+33683 17:20:00.496715 mq_timedreceive(4 <unfinished ...>
+33685 17:20:00.496788 <... mq_timedsend resumed>) = 0
+33683 17:20:00.496826 <... mq_timedreceive resumed>, "AVERAGE,25.00,50.00\0", 256, NULL, {tv_sec=1793701201, tv_nsec=496696299}) = 20
+33685 17:20:00.496901 futex(0x56e21ffb06d8, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+33683 17:20:00.496952 lseek(5, 0, SEEK_END) = 0
+33683 17:20:00.497092 mq_timedreceive(4 <unfinished ...>
+33686 17:20:00.596544 <... clock_nanosleep resumed>, NULL) = 0
+33686 17:20:00.596770 openat(AT_FDCWD, "/tmp/sms_sensor_test.csv", O_RDONLY) = 6
+33686 17:20:00.597106 read(6, "1730000000,25,50\n", 127) = 17
+33686 17:20:00.597210 close(6)          = 0
+33686 17:20:00.597279 futex(0x56e21ffb06d8, FUTEX_WAKE_PRIVATE, 1) = 1
+33686 17:20:00.597352 mq_timedsend(4, "SENSOR,1730000000,25.0,50.0\0", 28, 0, NULL <unfinished ...>
+33685 17:20:00.597380 <... futex resumed>) = 0
+33686 17:20:00.597418 <... mq_timedsend resumed>) = 0
+33686 17:20:00.597451 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=100000000} <unfinished ...>
+33683 17:20:00.597532 <... mq_timedreceive resumed>, "SENSOR,1730000000,25.0,50.0\0", 256, NULL, {tv_sec=1793701201, tv_nsec=497076704}) = 28
+33685 17:20:00.597560 futex(0x56e21ffb0690, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+33683 17:20:00.597648 lseek(5, 0, SEEK_END <unfinished ...>
+33685 17:20:00.597669 <... futex resumed>) = 0
+33685 17:20:00.597779 mq_timedsend(4, "AVERAGE,25.00,50.00\0", 20, 0, NULL <unfinished ...>
+33683 17:20:00.597807 <... lseek resumed>) = 0
+33685 17:20:00.597889 <... mq_timedsend resumed>) = 0
+33683 17:20:00.597908 mq_timedreceive(4 <unfinished ...>
+33685 17:20:00.597980 futex(0x56e21ffb06dc, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 1, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+33683 17:20:00.598027 <... mq_timedreceive resumed>, "AVERAGE,25.00,50.00\0", 256, NULL, {tv_sec=1793701201, tv_nsec=597894579}) = 20
+33683 17:20:00.598143 lseek(5, 0, SEEK_END) = 0
+33683 17:20:00.598209 mq_timedreceive(4 <unfinished ...>
+33686 17:20:00.697694 <... clock_nanosleep resumed>, NULL) = 0
+33686 17:20:00.697924 openat(AT_FDCWD, "/tmp/sms_sensor_test.csv", O_RDONLY) = 6
+33686 17:20:00.698209 read(6, "1730000000,25,50\n", 127) = 17
+33686 17:20:00.698408 close(6)          = 0
+33686 17:20:00.698675 futex(0x56e21ffb06dc, FUTEX_WAKE_PRIVATE, 1) = 1
+33686 17:20:00.698764 mq_timedsend(4, "SENSOR,1730000000,25.0,50.0\0", 28, 0, NULL <unfinished ...>
+33685 17:20:00.698801 <... futex resumed>) = 0
+33686 17:20:00.698824 <... mq_timedsend resumed>) = 0
+33686 17:20:00.698856 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=100000000} <unfinished ...>
+33685 17:20:00.698987 futex(0x56e21ffb0690, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+33683 17:20:00.699042 <... mq_timedreceive resumed>, "SENSOR,1730000000,25.0,50.0\0", 256, NULL, {tv_sec=1793701201, tv_nsec=598192660}) = 28
+33685 17:20:00.699105 <... futex resumed>) = 0
+33685 17:20:00.699230 mq_timedsend(4, "AVERAGE,25.00,50.00\0", 20, 0, NULL <unfinished ...>
+33683 17:20:00.699274 lseek(5, 0, SEEK_END <unfinished ...>
+33685 17:20:00.699355 <... mq_timedsend resumed>) = 0
+33683 17:20:00.699377 <... lseek resumed>) = 0
+33685 17:20:00.699471 futex(0x56e21ffb06d8, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 2, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+33683 17:20:00.699500 mq_timedreceive(4, "AVERAGE,25.00,50.00\0", 256, NULL, {tv_sec=1793701201, tv_nsec=699485255}) = 20
+33683 17:20:00.699807 lseek(5, 0, SEEK_END) = 0
+33683 17:20:00.700062 mq_timedreceive(4 <unfinished ...>
+33686 17:20:00.799034 <... clock_nanosleep resumed>, NULL) = 0
+33686 17:20:00.799194 openat(AT_FDCWD, "/tmp/sms_sensor_test.csv", O_RDONLY) = 6
+33686 17:20:00.799339 read(6, "1730000000,25,50\n", 127) = 17
+33686 17:20:00.799895 close(6)          = 0
+33686 17:20:00.800135 futex(0x56e21ffb06d8, FUTEX_WAKE_PRIVATE, 1) = 1
+33685 17:20:00.800327 <... futex resumed>) = 0
+33685 17:20:00.800374 futex(0x56e21ffb0690, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+33686 17:20:00.800407 futex(0x56e21ffb0690, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+33685 17:20:00.800439 <... futex resumed>) = -1 EAGAIN (Resource temporarily unavailable)
+33686 17:20:00.800472 <... futex resumed>) = 0
+33686 17:20:00.800524 mq_timedsend(4, "SENSOR,1730000000,25.0,50.0\0", 28, 0, NULL <unfinished ...>
+33685 17:20:00.800627 futex(0x56e21ffb0690, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+33686 17:20:00.800743 <... mq_timedsend resumed>) = 0
+33685 17:20:00.800773 <... futex resumed>) = 0
+33683 17:20:00.800801 <... mq_timedreceive resumed>, "SENSOR,1730000000,25.0,50.0\0", 256, NULL, {tv_sec=1793701201, tv_nsec=700046958}) = 28
+33686 17:20:00.800969 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=100000000} <unfinished ...>
+33685 17:20:00.801017 mq_timedsend(4, "AVERAGE,25.00,50.00\0", 20, 0, NULL <unfinished ...>
+33683 17:20:00.801029 lseek(5, 0, SEEK_END <unfinished ...>
+33685 17:20:00.801109 <... mq_timedsend resumed>) = 0
+33683 17:20:00.801120 <... lseek resumed>) = 0
+33683 17:20:00.801197 mq_timedreceive(4 <unfinished ...>
+33685 17:20:00.801221 futex(0x56e21ffb06dc, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 3, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+33683 17:20:00.801232 <... mq_timedreceive resumed>, "AVERAGE,25.00,50.00\0", 256, NULL, {tv_sec=1793701201, tv_nsec=801184125}) = 20
+33683 17:20:00.801262 lseek(5, 0, SEEK_END) = 0
+33683 17:20:00.801300 mq_timedreceive(4 <unfinished ...>
+33686 17:20:00.901249 <... clock_nanosleep resumed>, NULL) = 0
+33686 17:20:00.901527 openat(AT_FDCWD, "/tmp/sms_sensor_test.csv", O_RDONLY) = 6
+33686 17:20:00.901921 read(6, "1730000000,25,50\n", 127) = 17
+33686 17:20:00.902264 close(6)          = 0
+33686 17:20:00.902564 futex(0x56e21ffb06dc, FUTEX_WAKE_PRIVATE, 1) = 1
+33685 17:20:00.902728 <... futex resumed>) = 0
+33686 17:20:00.902775 mq_timedsend(4, "SENSOR,1730000000,25.0,50.0\0", 28, 0, NULL <unfinished ...>
+33685 17:20:00.902821 futex(0x56e21ffb0690, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+33686 17:20:00.902859 <... mq_timedsend resumed>) = 0
+33683 17:20:00.902885 <... mq_timedreceive resumed>, "SENSOR,1730000000,25.0,50.0\0", 256, NULL, {tv_sec=1793701201, tv_nsec=801293585}) = 28
+33686 17:20:00.902921 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=100000000} <unfinished ...>
+33685 17:20:00.902952 <... futex resumed>) = 0
+33683 17:20:00.902979 lseek(5, 0, SEEK_END <unfinished ...>
+33685 17:20:00.903005 mq_timedsend(4, "AVERAGE,25.00,50.00\0", 20, 0, NULL <unfinished ...>
+33683 17:20:00.903037 <... lseek resumed>) = 0
+33683 17:20:00.903087 mq_timedreceive(4 <unfinished ...>
+33685 17:20:00.903113 <... mq_timedsend resumed>) = 0
+33683 17:20:00.903137 <... mq_timedreceive resumed>, "AVERAGE,25.00,50.00\0", 256, NULL, {tv_sec=1793701201, tv_nsec=903062533}) = 20
+33685 17:20:00.903200 futex(0x56e21ffb06d8, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 4, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+33683 17:20:00.903229 lseek(5, 0, SEEK_END) = 0
+33683 17:20:00.903312 mq_timedreceive(4 <unfinished ...>
+33686 17:20:01.003157 <... clock_nanosleep resumed>, NULL) = 0
+33686 17:20:01.003490 openat(AT_FDCWD, "/tmp/sms_sensor_test.csv", O_RDONLY) = 6
+33686 17:20:01.003897 read(6, "1730000000,25,50\n", 127) = 17
+33686 17:20:01.004265 close(6)          = 0
+33686 17:20:01.004521 futex(0x56e21ffb06d8, FUTEX_WAKE_PRIVATE, 1) = 1
+33685 17:20:01.004776 <... futex resumed>) = 0
+33686 17:20:01.004856 mq_timedsend(4, "SENSOR,1730000000,25.0,50.0\0", 28, 0, NULL <unfinished ...>
+33685 17:20:01.004912 futex(0x56e21ffb0690, FUTEX_WAKE_PRIVATE, 1) = 0
+33685 17:20:01.005030 mq_timedsend(4, "AVERAGE,25.00,50.00\0", 20, 0, NULL <unfinished ...>
+33686 17:20:01.005070 <... mq_timedsend resumed>) = 0
+33683 17:20:01.005095 <... mq_timedreceive resumed>, "SENSOR,1730000000,25.0,50.0\0", 256, NULL, {tv_sec=1793701201, tv_nsec=903289504}) = 28
+33686 17:20:01.005129 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=100000000} <unfinished ...>
+33685 17:20:01.005153 <... mq_timedsend resumed>) = 0
+33683 17:20:01.005174 lseek(5, 0, SEEK_END <unfinished ...>
+33685 17:20:01.005195 futex(0x56e21ffb06dc, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 5, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+33683 17:20:01.005224 <... lseek resumed>) = 0
+33683 17:20:01.005269 mq_timedreceive(4, "AVERAGE,25.00,50.00\0", 256, NULL, {tv_sec=1793701202, tv_nsec=5247560}) = 20
+33683 17:20:01.005359 lseek(5, 0, SEEK_END) = 0
+33683 17:20:01.005467 mq_timedreceive(4 <unfinished ...>
+33686 17:20:01.105472 <... clock_nanosleep resumed>, NULL) = 0
+33686 17:20:01.105801 openat(AT_FDCWD, "/tmp/sms_sensor_test.csv", O_RDONLY) = 6
+33686 17:20:01.106203 read(6, "1730000000,25,50\n", 127) = 17
+33686 17:20:01.106599 close(6)          = 0
+33686 17:20:01.106946 futex(0x56e21ffb06dc, FUTEX_WAKE_PRIVATE, 1) = 1
+33686 17:20:01.107077 mq_timedsend(4, "SENSOR,1730000000,25.0,50.0\0", 28, 0, NULL <unfinished ...>
+33685 17:20:01.107139 <... futex resumed>) = 0
+33686 17:20:01.107181 <... mq_timedsend resumed>) = 0
+33686 17:20:01.107223 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=100000000} <unfinished ...>
+33683 17:20:01.107268 <... mq_timedreceive resumed>, "SENSOR,1730000000,25.0,50.0\0", 256, NULL, {tv_sec=1793701202, tv_nsec=5445112}) = 28
+33685 17:20:01.107299 futex(0x56e21ffb0690, FUTEX_WAKE_PRIVATE, 1) = 0
+33683 17:20:01.107539 lseek(5, 0, SEEK_END <unfinished ...>
+33685 17:20:01.107787 mq_timedsend(4, "AVERAGE,25.00,50.00\0", 20, 0, NULL <unfinished ...>
+33683 17:20:01.107873 <... lseek resumed>) = 0
+33685 17:20:01.108011 <... mq_timedsend resumed>) = 0
+33683 17:20:01.108068 mq_timedreceive(4, "AVERAGE,25.00,50.00\0", 256, NULL, {tv_sec=1793701202, tv_nsec=107973844}) = 20
+33685 17:20:01.108286 futex(0x56e21ffb06d8, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 6, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+33683 17:20:01.108381 lseek(5, 0, SEEK_END) = 0
+33683 17:20:01.108855 mq_timedreceive(4 <unfinished ...>
+33686 17:20:01.207376 <... clock_nanosleep resumed>, NULL) = 0
+33686 17:20:01.207710 openat(AT_FDCWD, "/tmp/sms_sensor_test.csv", O_RDONLY) = 6
+33686 17:20:01.208105 read(6, "1730000000,25,50\n", 127) = 17
+33686 17:20:01.208181 close(6)          = 0
+33686 17:20:01.208214 futex(0x56e21ffb06d8, FUTEX_WAKE_PRIVATE, 1) = 1
+33686 17:20:01.208306 mq_timedsend(4, "SENSOR,1730000000,25.0,50.0\0", 28, 0, NULL <unfinished ...>
+33685 17:20:01.208358 <... futex resumed>) = 0
+33686 17:20:01.208378 <... mq_timedsend resumed>) = 0
+33685 17:20:01.208408 futex(0x56e21ffb0690, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+33683 17:20:01.208438 <... mq_timedreceive resumed>, "SENSOR,1730000000,25.0,50.0\0", 256, NULL, {tv_sec=1793701202, tv_nsec=108745252}) = 28
+33686 17:20:01.208465 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=100000000} <unfinished ...>
+33685 17:20:01.208503 <... futex resumed>) = 0
+33683 17:20:01.208543 lseek(5, 0, SEEK_END <unfinished ...>
+33685 17:20:01.208594 mq_timedsend(4, "AVERAGE,25.00,50.00\0", 20, 0, NULL <unfinished ...>
+33683 17:20:01.208647 <... lseek resumed>) = 0
+33685 17:20:01.208767 <... mq_timedsend resumed>) = 0
+33683 17:20:01.208805 mq_timedreceive(4, "AVERAGE,25.00,50.00\0", 256, NULL, {tv_sec=1793701202, tv_nsec=208672131}) = 20
+33685 17:20:01.208875 futex(0x56e21ffb06dc, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 7, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+33683 17:20:01.208899 lseek(5, 0, SEEK_END) = 0
+33683 17:20:01.208968 mq_timedreceive(4 <unfinished ...>
+33686 17:20:01.308735 <... clock_nanosleep resumed>, NULL) = 0
+33686 17:20:01.308926 openat(AT_FDCWD, "/tmp/sms_sensor_test.csv", O_RDONLY) = 6
+33686 17:20:01.309197 read(6, "1730000000,25,50\n", 127) = 17
+33686 17:20:01.309306 close(6)          = 0
+33686 17:20:01.309393 futex(0x56e21ffb06dc, FUTEX_WAKE_PRIVATE, 1) = 1
+33685 17:20:01.309548 <... futex resumed>) = 0
+33686 17:20:01.309574 mq_timedsend(4, "SENSOR,1730000000,25.0,50.0\0", 28, 0, NULL <unfinished ...>
+33685 17:20:01.309599 futex(0x56e21ffb0690, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+33686 17:20:01.309614 <... mq_timedsend resumed>) = 0
+33686 17:20:01.309642 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=100000000} <unfinished ...>
+33685 17:20:01.309665 <... futex resumed>) = 0
+33683 17:20:01.309680 <... mq_timedreceive resumed>, "SENSOR,1730000000,25.0,50.0\0", 256, NULL, {tv_sec=1793701202, tv_nsec=208956080}) = 28
+33685 17:20:01.309700 mq_timedsend(4, "AVERAGE,25.00,50.00\0", 20, 0, NULL) = 0
+33685 17:20:01.309767 futex(0x56e21ffb06d8, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 8, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+33683 17:20:01.309786 lseek(5, 0, SEEK_END) = 0
+33683 17:20:01.310054 mq_timedreceive(4, "AVERAGE,25.00,50.00\0", 256, NULL, {tv_sec=1793701202, tv_nsec=309993639}) = 20
+33683 17:20:01.310255 lseek(5, 0, SEEK_END) = 0
+33683 17:20:01.310313 mq_timedreceive(4 <unfinished ...>
+33686 17:20:01.409997 <... clock_nanosleep resumed>, NULL) = 0
+33686 17:20:01.410527 openat(AT_FDCWD, "/tmp/sms_sensor_test.csv", O_RDONLY) = 6
+33686 17:20:01.411054 read(6, "1730000000,25,50\n", 127) = 17
+33686 17:20:01.411481 close(6)          = 0
+33686 17:20:01.412132 futex(0x56e21ffb06d8, FUTEX_WAKE_PRIVATE, 1) = 1
+33685 17:20:01.412441 <... futex resumed>) = 0
+33686 17:20:01.412566 mq_timedsend(4, "SENSOR,1730000000,25.0,50.0\0", 28, 0, NULL <unfinished ...>
+33685 17:20:01.412649 futex(0x56e21ffb0690, FUTEX_WAKE_PRIVATE, 1) = 0
+33686 17:20:01.412961 <... mq_timedsend resumed>) = 0
+33685 17:20:01.413094 mq_timedsend(4, "AVERAGE,25.00,50.00\0", 20, 0, NULL <unfinished ...>
+33683 17:20:01.413204 <... mq_timedreceive resumed>, "SENSOR,1730000000,25.0,50.0\0", 256, NULL, {tv_sec=1793701202, tv_nsec=310303578}) = 28
+33686 17:20:01.413289 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=100000000} <unfinished ...>
+33685 17:20:01.413355 <... mq_timedsend resumed>) = 0
+33683 17:20:01.413428 lseek(5, 0, SEEK_END <unfinished ...>
+33685 17:20:01.413528 futex(0x56e21ffb06dc, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 9, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+33683 17:20:01.413614 <... lseek resumed>) = 0
+33683 17:20:01.413839 mq_timedreceive(4, "AVERAGE,25.00,50.00\0", 256, NULL, {tv_sec=1793701202, tv_nsec=413733393}) = 20
+33683 17:20:01.414437 lseek(5, 0, SEEK_END) = 0
+33683 17:20:01.415175 mq_timedreceive(4 <unfinished ...>
+33686 17:20:01.513695 <... clock_nanosleep resumed>, NULL) = 0
+33686 17:20:01.514018 openat(AT_FDCWD, "/tmp/sms_sensor_test.csv", O_RDONLY) = 6
+33686 17:20:01.514420 read(6, "1730000000,25,50\n", 127) = 17
+33686 17:20:01.514953 close(6)          = 0
+33686 17:20:01.515478 futex(0x56e21ffb06dc, FUTEX_WAKE_PRIVATE, 1) = 1
+33685 17:20:01.516137 <... futex resumed>) = 0
+33686 17:20:01.516353 mq_timedsend(4, "SENSOR,1730000000,25.0,50.0\0", 28, 0, NULL <unfinished ...>
+33685 17:20:01.516581 futex(0x56e21ffb0690, FUTEX_WAKE_PRIVATE, 1) = 0
+33686 17:20:01.516726 <... mq_timedsend resumed>) = 0
+33686 17:20:01.516938 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=100000000} <unfinished ...>
+33685 17:20:01.517207 mq_timedsend(4, "AVERAGE,25.00,50.00\0", 20, 0, NULL <unfinished ...>
+33683 17:20:01.517274 <... mq_timedreceive resumed>, "SENSOR,1730000000,25.0,50.0\0", 256, NULL, {tv_sec=1793701202, tv_nsec=415031109}) = 28
+33685 17:20:01.517524 <... mq_timedsend resumed>) = 0
+33683 17:20:01.517708 lseek(5, 0, SEEK_END <unfinished ...>
+33685 17:20:01.517824 futex(0x56e21ffb06d8, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 10, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+33683 17:20:01.517874 <... lseek resumed>) = 0
+33683 17:20:01.518054 mq_timedreceive(4, "AVERAGE,25.00,50.00\0", 256, NULL, {tv_sec=1793701202, tv_nsec=517926540}) = 20
+33683 17:20:01.518329 lseek(5, 0, SEEK_END) = 0
+33683 17:20:01.518678 mq_timedreceive(4 <unfinished ...>
+33686 17:20:01.617762 <... clock_nanosleep resumed>, NULL) = 0
+33686 17:20:01.618487 openat(AT_FDCWD, "/tmp/sms_sensor_test.csv", O_RDONLY) = 6
+33686 17:20:01.619423 read(6, "1730000000,25,50\n", 127) = 17
+33686 17:20:01.620028 close(6)          = 0
+33686 17:20:01.620318 futex(0x56e21ffb06d8, FUTEX_WAKE_PRIVATE, 1) = 1
+33685 17:20:01.620548 <... futex resumed>) = 0
+33686 17:20:01.620626 mq_timedsend(4, "SENSOR,1730000000,25.0,50.0\0", 28, 0, NULL <unfinished ...>
+33685 17:20:01.620716 futex(0x56e21ffb0690, FUTEX_WAKE_PRIVATE, 1) = 0
+33686 17:20:01.620823 <... mq_timedsend resumed>) = 0
+33683 17:20:01.620863 <... mq_timedreceive resumed>, "SENSOR,1730000000,25.0,50.0\0", 256, NULL, {tv_sec=1793701202, tv_nsec=518519985}) = 28
+33686 17:20:01.620930 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=100000000} <unfinished ...>
+33685 17:20:01.620972 mq_timedsend(4, "AVERAGE,25.00,50.00\0", 20, 0, NULL <unfinished ...>
+33683 17:20:01.621017 lseek(5, 0, SEEK_END <unfinished ...>
+33685 17:20:01.621054 <... mq_timedsend resumed>) = 0
+33683 17:20:01.621087 <... lseek resumed>) = 0
+33685 17:20:01.621119 futex(0x56e21ffb06dc, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 11, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+33683 17:20:01.621159 mq_timedreceive(4, "AVERAGE,25.00,50.00\0", 256, NULL, {tv_sec=1793701202, tv_nsec=621122368}) = 20
+33683 17:20:01.621442 lseek(5, 0, SEEK_END) = 0
+33683 17:20:01.621618 mq_timedreceive(4 <unfinished ...>
+33686 17:20:01.721300 <... clock_nanosleep resumed>, NULL) = 0
+33686 17:20:01.721592 openat(AT_FDCWD, "/tmp/sms_sensor_test.csv", O_RDONLY) = 6
+33686 17:20:01.721924 read(6, "1730000000,25,50\n", 127) = 17
+33686 17:20:01.722033 close(6)          = 0
+33686 17:20:01.722121 futex(0x56e21ffb06dc, FUTEX_WAKE_PRIVATE, 1) = 1
+33686 17:20:01.722224 mq_timedsend(4, "SENSOR,1730000000,25.0,50.0\0", 28, 0, NULL <unfinished ...>
+33685 17:20:01.722257 <... futex resumed>) = 0
+33686 17:20:01.722283 <... mq_timedsend resumed>) = 0
+33686 17:20:01.722322 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=100000000} <unfinished ...>
+33685 17:20:01.722373 futex(0x56e21ffb0690, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+33683 17:20:01.722417 <... mq_timedreceive resumed>, "SENSOR,1730000000,25.0,50.0\0", 256, NULL, {tv_sec=1793701202, tv_nsec=621585904}) = 28
+33685 17:20:01.722491 <... futex resumed>) = 0
+33683 17:20:01.722520 lseek(5, 0, SEEK_END <unfinished ...>
+33685 17:20:01.722683 mq_timedsend(4, "AVERAGE,25.00,50.00\0", 20, 0, NULL <unfinished ...>
+33683 17:20:01.722718 <... lseek resumed>) = 0
+33683 17:20:01.722764 mq_timedreceive(4 <unfinished ...>
+33685 17:20:01.722791 <... mq_timedsend resumed>) = 0
+33683 17:20:01.722813 <... mq_timedreceive resumed>, "AVERAGE,25.00,50.00\0", 256, NULL, {tv_sec=1793701202, tv_nsec=722746803}) = 20
+33683 17:20:01.722865 lseek(5, 0, SEEK_END <unfinished ...>
+33685 17:20:01.722895 futex(0x56e21ffb06d8, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 12, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+33683 17:20:01.722920 <... lseek resumed>) = 0
+33683 17:20:01.722959 mq_timedreceive(4 <unfinished ...>
+33686 17:20:01.822781 <... clock_nanosleep resumed>, NULL) = 0
+33686 17:20:01.823467 openat(AT_FDCWD, "/tmp/sms_sensor_test.csv", O_RDONLY) = 6
+33686 17:20:01.824274 read(6, "1730000000,25,50\n", 127) = 17
+33686 17:20:01.824967 close(6)          = 0
+33686 17:20:01.825257 futex(0x56e21ffb06d8, FUTEX_WAKE_PRIVATE, 1) = 1
+33685 17:20:01.825709 <... futex resumed>) = 0
+33686 17:20:01.825845 mq_timedsend(4, "SENSOR,1730000000,25.0,50.0\0", 28, 0, NULL <unfinished ...>
+33685 17:20:01.825937 futex(0x56e21ffb0690, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+33686 17:20:01.826069 <... mq_timedsend resumed>) = 0
+33685 17:20:01.826108 <... futex resumed>) = 0
+33686 17:20:01.826149 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=100000000} <unfinished ...>
+33683 17:20:01.826196 <... mq_timedreceive resumed>, "SENSOR,1730000000,25.0,50.0\0", 256, NULL, {tv_sec=1793701202, tv_nsec=722943610}) = 28
+33685 17:20:01.826250 mq_timedsend(4, "AVERAGE,25.00,50.00\0", 20, 0, NULL <unfinished ...>
+33683 17:20:01.826300 lseek(5, 0, SEEK_END <unfinished ...>
+33685 17:20:01.826350 <... mq_timedsend resumed>) = 0
+33683 17:20:01.826423 <... lseek resumed>) = 0
+33685 17:20:01.826472 futex(0x56e21ffb06dc, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 13, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+33683 17:20:01.826648 mq_timedreceive(4, "AVERAGE,25.00,50.00\0", 256, NULL, {tv_sec=1793701202, tv_nsec=826566469}) = 20
+33683 17:20:01.827725 lseek(5, 0, SEEK_END) = 0
+33683 17:20:01.828362 mq_timedreceive(4 <unfinished ...>
+33686 17:20:01.926626 <... clock_nanosleep resumed>, NULL) = 0
+33686 17:20:01.927098 openat(AT_FDCWD, "/tmp/sms_sensor_test.csv", O_RDONLY) = 6
+33686 17:20:01.927760 read(6, "1730000000,25,50\n", 127) = 17
+33686 17:20:01.928106 close(6)          = 0
+33686 17:20:01.928291 futex(0x56e21ffb06dc, FUTEX_WAKE_PRIVATE, 1) = 1
+33685 17:20:01.928562 <... futex resumed>) = 0
+33686 17:20:01.928686 mq_timedsend(4, "SENSOR,1730000000,25.0,50.0\0", 28, 0, NULL <unfinished ...>
+33685 17:20:01.928756 futex(0x56e21ffb0690, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+33686 17:20:01.928832 <... mq_timedsend resumed>) = 0
+33686 17:20:01.928897 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=100000000} <unfinished ...>
+33683 17:20:01.928947 <... mq_timedreceive resumed>, "SENSOR,1730000000,25.0,50.0\0", 256, NULL, {tv_sec=1793701202, tv_nsec=828276822}) = 28
+33685 17:20:01.928996 <... futex resumed>) = 0
+33683 17:20:01.929047 lseek(5, 0, SEEK_END <unfinished ...>
+33685 17:20:01.929139 mq_timedsend(4, "AVERAGE,25.00,50.00\0", 20, 0, NULL <unfinished ...>
+33683 17:20:01.929198 <... lseek resumed>) = 0
+33685 17:20:01.929236 <... mq_timedsend resumed>) = 0
+33683 17:20:01.929268 mq_timedreceive(4 <unfinished ...>
+33685 17:20:01.929301 futex(0x56e21ffb06d8, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 14, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+33683 17:20:01.929339 <... mq_timedreceive resumed>, "AVERAGE,25.00,50.00\0", 256, NULL, {tv_sec=1793701202, tv_nsec=929251650}) = 20
+33683 17:20:01.929468 lseek(5, 0, SEEK_END) = 0
+33683 17:20:01.929867 mq_timedreceive(4 <unfinished ...>
+33686 17:20:02.029134 <... clock_nanosleep resumed>, NULL) = 0
+33686 17:20:02.029381 openat(AT_FDCWD, "/tmp/sms_sensor_test.csv", O_RDONLY) = 6
+33686 17:20:02.029777 read(6, "1730000000,25,50\n", 127) = 17
+33686 17:20:02.030077 close(6)          = 0
+33686 17:20:02.030204 futex(0x56e21ffb06d8, FUTEX_WAKE_PRIVATE, 1) = 1
+33685 17:20:02.030372 <... futex resumed>) = 0
+33686 17:20:02.030448 mq_timedsend(4, "SENSOR,1730000000,25.0,50.0\0", 28, 0, NULL <unfinished ...>
+33685 17:20:02.030493 futex(0x56e21ffb0690, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+33686 17:20:02.030545 <... mq_timedsend resumed>) = 0
+33685 17:20:02.030569 <... futex resumed>) = 0
+33686 17:20:02.030597 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=100000000} <unfinished ...>
+33683 17:20:02.030639 <... mq_timedreceive resumed>, "SENSOR,1730000000,25.0,50.0\0", 256, NULL, {tv_sec=1793701202, tv_nsec=929836843}) = 28
+33685 17:20:02.030681 mq_timedsend(4, "AVERAGE,25.00,50.00\0", 20, 0, NULL) = 0
+33683 17:20:02.030767 lseek(5, 0, SEEK_END <unfinished ...>
+33685 17:20:02.030796 futex(0x56e21ffb06dc, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 15, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+33683 17:20:02.030901 <... lseek resumed>) = 0
+33683 17:20:02.031007 mq_timedreceive(4, "AVERAGE,25.00,50.00\0", 256, NULL, {tv_sec=1793701203, tv_nsec=30940320}) = 20
+33683 17:20:02.031268 lseek(5, 0, SEEK_END) = 0
+33683 17:20:02.031319 mq_timedreceive(4 <unfinished ...>
+33686 17:20:02.130999 <... clock_nanosleep resumed>, NULL) = 0
+33686 17:20:02.131315 openat(AT_FDCWD, "/tmp/sms_sensor_test.csv", O_RDONLY) = 6
+33686 17:20:02.131824 read(6, "1730000000,25,50\n", 127) = 17
+33686 17:20:02.132156 close(6)          = 0
+33686 17:20:02.132300 futex(0x56e21ffb06dc, FUTEX_WAKE_PRIVATE, 1) = 1
+33685 17:20:02.132458 <... futex resumed>) = 0
+33686 17:20:02.132556 mq_timedsend(4, "SENSOR,1730000000,25.0,50.0\0", 28, 0, NULL) = 0
+33685 17:20:02.132681 futex(0x56e21ffb0690, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+33686 17:20:02.132715 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=100000000} <unfinished ...>
+33683 17:20:02.132758 <... mq_timedreceive resumed>, "SENSOR,1730000000,25.0,50.0\0", 256, NULL, {tv_sec=1793701203, tv_nsec=31310944}) = 28
+33685 17:20:02.132810 <... futex resumed>) = 0
+33685 17:20:02.132935 mq_timedsend(4, "AVERAGE,25.00,50.00\0", 20, 0, NULL <unfinished ...>
+33683 17:20:02.133002 lseek(5, 0, SEEK_END <unfinished ...>
+33685 17:20:02.133093 <... mq_timedsend resumed>) = 0
+33683 17:20:02.133126 <... lseek resumed>) = 0
+33685 17:20:02.133150 futex(0x56e21ffb06d8, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 16, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+33683 17:20:02.133227 mq_timedreceive(4, "AVERAGE,25.00,50.00\0", 256, NULL, {tv_sec=1793701203, tv_nsec=133199950}) = 20
+33683 17:20:02.133716 lseek(5, 0, SEEK_END) = 0
+33683 17:20:02.134132 mq_timedreceive(4 <unfinished ...>
+33686 17:20:02.233086 <... clock_nanosleep resumed>, NULL) = 0
+33686 17:20:02.233416 openat(AT_FDCWD, "/tmp/sms_sensor_test.csv", O_RDONLY) = 6
+33686 17:20:02.233850 read(6, "1730000000,25,50\n", 127) = 17
+33686 17:20:02.234121 close(6)          = 0
+33686 17:20:02.234214 futex(0x56e21ffb06d8, FUTEX_WAKE_PRIVATE, 1) = 1
+33686 17:20:02.234294 mq_timedsend(4, "SENSOR,1730000000,25.0,50.0\0", 28, 0, NULL <unfinished ...>
+33685 17:20:02.234324 <... futex resumed>) = 0
+33686 17:20:02.234348 <... mq_timedsend resumed>) = 0
+33685 17:20:02.234369 futex(0x56e21ffb0690, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+33686 17:20:02.234408 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=100000000} <unfinished ...>
+33685 17:20:02.234441 <... futex resumed>) = 0
+33683 17:20:02.234459 <... mq_timedreceive resumed>, "SENSOR,1730000000,25.0,50.0\0", 256, NULL, {tv_sec=1793701203, tv_nsec=134075893}) = 28
+33685 17:20:02.234487 mq_timedsend(4, "AVERAGE,25.00,50.00\0", 20, 0, NULL) = 0
+33683 17:20:02.234543 lseek(5, 0, SEEK_END <unfinished ...>
+33685 17:20:02.234566 futex(0x56e21ffb06dc, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 17, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+33683 17:20:02.234691 <... lseek resumed>) = 0
+33683 17:20:02.234800 mq_timedreceive(4, "AVERAGE,25.00,50.00\0", 256, NULL, {tv_sec=1793701203, tv_nsec=234782490}) = 20
+33683 17:20:02.234939 lseek(5, 0, SEEK_END) = 0
+33683 17:20:02.234999 mq_timedreceive(4 <unfinished ...>
+33686 17:20:02.334713 <... clock_nanosleep resumed>, NULL) = 0
+33686 17:20:02.334967 openat(AT_FDCWD, "/tmp/sms_sensor_test.csv", O_RDONLY) = 6
+33686 17:20:02.335548 read(6, "1730000000,25,50\n", 127) = 17
+33686 17:20:02.336047 close(6)          = 0
+33686 17:20:02.336263 futex(0x56e21ffb06dc, FUTEX_WAKE_PRIVATE, 1) = 1
+33686 17:20:02.336349 mq_timedsend(4, "SENSOR,1730000000,25.0,50.0\0", 28, 0, NULL) = 0
+33686 17:20:02.336557 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=100000000} <unfinished ...>
+33685 17:20:02.336667 <... futex resumed>) = 0
+33685 17:20:02.336845 futex(0x56e21ffb0690, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+33683 17:20:02.336909 <... mq_timedreceive resumed>, "SENSOR,1730000000,25.0,50.0\0", 256, NULL, {tv_sec=1793701203, tv_nsec=234987541}) = 28
+33685 17:20:02.337074 <... futex resumed>) = 0
+33683 17:20:02.337121 lseek(5, 0, SEEK_END <unfinished ...>
+33685 17:20:02.337210 mq_timedsend(4, "AVERAGE,25.00,50.00\0", 20, 0, NULL <unfinished ...>
+33683 17:20:02.337251 <... lseek resumed>) = 0
+33683 17:20:02.337301 mq_timedreceive(4 <unfinished ...>
+33685 17:20:02.337331 <... mq_timedsend resumed>) = 0
+33683 17:20:02.337354 <... mq_timedreceive resumed>, "AVERAGE,25.00,50.00\0", 256, NULL, {tv_sec=1793701203, tv_nsec=337282908}) = 20
+33685 17:20:02.337506 futex(0x56e21ffb06d8, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 18, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+33683 17:20:02.337570 lseek(5, 0, SEEK_END) = 0
+33683 17:20:02.337862 mq_timedreceive(4 <unfinished ...>
+33686 17:20:02.436902 <... clock_nanosleep resumed>, NULL) = 0
+33686 17:20:02.437145 openat(AT_FDCWD, "/tmp/sms_sensor_test.csv", O_RDONLY) = 6
+33686 17:20:02.437357 read(6, "1730000000,25,50\n", 127) = 17
+33686 17:20:02.437589 close(6)          = 0
+33686 17:20:02.437962 futex(0x56e21ffb06d8, FUTEX_WAKE_PRIVATE, 1) = 1
+33685 17:20:02.438181 <... futex resumed>) = 0
+33686 17:20:02.438278 mq_timedsend(4, "SENSOR,1730000000,25.0,50.0\0", 28, 0, NULL <unfinished ...>
+33685 17:20:02.438311 futex(0x56e21ffb0690, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+33686 17:20:02.438333 <... mq_timedsend resumed>) = 0
+33686 17:20:02.438368 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=100000000} <unfinished ...>
+33685 17:20:02.438415 <... futex resumed>) = 0
+33683 17:20:02.438440 <... mq_timedreceive resumed>, "SENSOR,1730000000,25.0,50.0\0", 256, NULL, {tv_sec=1793701203, tv_nsec=337787667}) = 28
+33685 17:20:02.438539 mq_timedsend(4, "AVERAGE,25.00,50.00\0", 20, 0, NULL <unfinished ...>
+33683 17:20:02.438568 lseek(5, 0, SEEK_END <unfinished ...>
+33685 17:20:02.438652 <... mq_timedsend resumed>) = 0
+33683 17:20:02.438675 <... lseek resumed>) = 0
+33685 17:20:02.438749 futex(0x56e21ffb06dc, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 19, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+33683 17:20:02.438792 mq_timedreceive(4, "AVERAGE,25.00,50.00\0", 256, NULL, {tv_sec=1793701203, tv_nsec=438772855}) = 20
+33683 17:20:02.439001 lseek(5, 0, SEEK_END) = 0
+33683 17:20:02.439132 mq_timedreceive(4 <unfinished ...>
+33686 17:20:02.538638 <... clock_nanosleep resumed>, NULL) = 0
+33686 17:20:02.538887 openat(AT_FDCWD, "/tmp/sms_sensor_test.csv", O_RDONLY) = 6
+33686 17:20:02.539207 read(6, "1730000000,25,50\n", 127) = 17
+33686 17:20:02.539431 close(6)          = 0
+33686 17:20:02.539715 futex(0x56e21ffb06dc, FUTEX_WAKE_PRIVATE, 1) = 1
+33685 17:20:02.539916 <... futex resumed>) = 0
+33686 17:20:02.539986 mq_timedsend(4, "SENSOR,1730000000,25.0,50.0\0", 28, 0, NULL <unfinished ...>
+33685 17:20:02.540022 futex(0x56e21ffb0690, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+33686 17:20:02.540047 <... mq_timedsend resumed>) = 0
+33685 17:20:02.540068 <... futex resumed>) = 0
+33686 17:20:02.540088 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=100000000} <unfinished ...>
+33685 17:20:02.540118 mq_timedsend(4, "AVERAGE,25.00,50.00\0", 20, 0, NULL <unfinished ...>
+33683 17:20:02.540143 <... mq_timedreceive resumed>, "SENSOR,1730000000,25.0,50.0\0", 256, NULL, {tv_sec=1793701203, tv_nsec=439116627}) = 28
+33685 17:20:02.540168 <... mq_timedsend resumed>) = 0
+33685 17:20:02.540204 futex(0x56e21ffb06d8, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 20, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+33683 17:20:02.540230 lseek(5, 0, SEEK_END) = 0
+33683 17:20:02.540298 mq_timedreceive(4, "AVERAGE,25.00,50.00\0", 256, NULL, {tv_sec=1793701203, tv_nsec=540285069}) = 20
+33683 17:20:02.540369 lseek(5, 0, SEEK_END) = 0
+33683 17:20:02.540442 mq_timedreceive(4 <unfinished ...>
+33686 17:20:02.640343 <... clock_nanosleep resumed>, NULL) = 0
+33686 17:20:02.640651 openat(AT_FDCWD, "/tmp/sms_sensor_test.csv", O_RDONLY) = 6
+33686 17:20:02.641098 read(6, "1730000000,25,50\n", 127) = 17
+33686 17:20:02.641359 close(6)          = 0
+33686 17:20:02.641678 futex(0x56e21ffb06d8, FUTEX_WAKE_PRIVATE, 1) = 1
+33685 17:20:02.641887 <... futex resumed>) = 0
+33686 17:20:02.641944 mq_timedsend(4, "SENSOR,1730000000,25.0,50.0\0", 28, 0, NULL <unfinished ...>
+33685 17:20:02.642020 futex(0x56e21ffb0690, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+33686 17:20:02.642098 <... mq_timedsend resumed>) = 0
+33685 17:20:02.642144 <... futex resumed>) = 0
+33683 17:20:02.642169 <... mq_timedreceive resumed>, "SENSOR,1730000000,25.0,50.0\0", 256, NULL, {tv_sec=1793701203, tv_nsec=540429942}) = 28
+33686 17:20:02.642216 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=100000000} <unfinished ...>
+33685 17:20:02.642258 mq_timedsend(4, "AVERAGE,25.00,50.00\0", 20, 0, NULL <unfinished ...>
+33683 17:20:02.642297 lseek(5, 0, SEEK_END <unfinished ...>
+33685 17:20:02.642332 <... mq_timedsend resumed>) = 0
+33685 17:20:02.642405 futex(0x56e21ffb06dc, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 21, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+33683 17:20:02.642449 <... lseek resumed>) = 0
+33683 17:20:02.642592 mq_timedreceive(4, "AVERAGE,25.00,50.00\0", 256, NULL, {tv_sec=1793701203, tv_nsec=642552614}) = 20
+33683 17:20:02.642728 lseek(5, 0, SEEK_END) = 0
+33683 17:20:02.642823 mq_timedreceive(4 <unfinished ...>
+33686 17:20:02.742671 <... clock_nanosleep resumed>, NULL) = 0
+33686 17:20:02.742959 openat(AT_FDCWD, "/tmp/sms_sensor_test.csv", O_RDONLY) = 6
+33686 17:20:02.743232 read(6, "1730000000,25,50\n", 127) = 17
+33686 17:20:02.743622 close(6)          = 0
+33686 17:20:02.743899 futex(0x56e21ffb06dc, FUTEX_WAKE_PRIVATE, 1) = 1
+33686 17:20:02.744060 mq_timedsend(4, "SENSOR,1730000000,25.0,50.0\0", 28, 0, NULL <unfinished ...>
+33685 17:20:02.744101 <... futex resumed>) = 0
+33686 17:20:02.744130 <... mq_timedsend resumed>) = 0
+33685 17:20:02.744156 futex(0x56e21ffb0690, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+33686 17:20:02.744181 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=100000000} <unfinished ...>
+33683 17:20:02.744208 <... mq_timedreceive resumed>, "SENSOR,1730000000,25.0,50.0\0", 256, NULL, {tv_sec=1793701203, tv_nsec=642804663}) = 28
+33685 17:20:02.744238 <... futex resumed>) = 0
+33685 17:20:02.744283 mq_timedsend(4, "AVERAGE,25.00,50.00\0", 20, 0, NULL <unfinished ...>
+33683 17:20:02.744314 lseek(5, 0, SEEK_END <unfinished ...>
+33685 17:20:02.744338 <... mq_timedsend resumed>) = 0
+33685 17:20:02.744377 futex(0x56e21ffb06d8, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 22, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+33683 17:20:02.744423 <... lseek resumed>) = 0
+33683 17:20:02.744527 mq_timedreceive(4, "AVERAGE,25.00,50.00\0", 256, NULL, {tv_sec=1793701203, tv_nsec=744507056}) = 20
+33683 17:20:02.744814 lseek(5, 0, SEEK_END) = 0
+33683 17:20:02.744917 mq_timedreceive(4 <unfinished ...>
+33686 17:20:02.844546 <... clock_nanosleep resumed>, NULL) = 0
+33686 17:20:02.844832 openat(AT_FDCWD, "/tmp/sms_sensor_test.csv", O_RDONLY) = 6
+33686 17:20:02.845126 read(6, "1730000000,25,50\n", 127) = 17
+33686 17:20:02.845330 close(6)          = 0
+33686 17:20:02.845629 futex(0x56e21ffb06d8, FUTEX_WAKE_PRIVATE, 1) = 1
+33685 17:20:02.846069 <... futex resumed>) = 0
+33686 17:20:02.846190 mq_timedsend(4, "SENSOR,1730000000,25.0,50.0\0", 28, 0, NULL <unfinished ...>
+33685 17:20:02.846316 futex(0x56e21ffb0690, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+33686 17:20:02.846495 <... mq_timedsend resumed>) = 0
+33685 17:20:02.846540 <... futex resumed>) = 0
+33683 17:20:02.846558 <... mq_timedreceive resumed>, "SENSOR,1730000000,25.0,50.0\0", 256, NULL, {tv_sec=1793701203, tv_nsec=744897494}) = 28
+33686 17:20:02.846680 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=100000000} <unfinished ...>
+33685 17:20:02.846749 mq_timedsend(4, "AVERAGE,25.00,50.00\0", 20, 0, NULL <unfinished ...>
+33683 17:20:02.846776 lseek(5, 0, SEEK_END <unfinished ...>
+33685 17:20:02.846926 <... mq_timedsend resumed>) = 0
+33683 17:20:02.846967 <... lseek resumed>) = 0
+33685 17:20:02.846991 futex(0x56e21ffb06dc, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 23, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+33683 17:20:02.847118 mq_timedreceive(4, "AVERAGE,25.00,50.00\0", 256, NULL, {tv_sec=1793701203, tv_nsec=847040868}) = 20
+33683 17:20:02.847263 lseek(5, 0, SEEK_END) = 0
+33683 17:20:02.847333 mq_timedreceive(4 <unfinished ...>
+33686 17:20:02.947092 <... clock_nanosleep resumed>, NULL) = 0
+33686 17:20:02.947319 openat(AT_FDCWD, "/tmp/sms_sensor_test.csv", O_RDONLY) = 6
+33686 17:20:02.947711 read(6, "1730000000,25,50\n", 127) = 17
+33686 17:20:02.947973 close(6)          = 0
+33686 17:20:02.948195 futex(0x56e21ffb06dc, FUTEX_WAKE_PRIVATE, 1) = 1
+33686 17:20:02.948311 mq_timedsend(4, "SENSOR,1730000000,25.0,50.0\0", 28, 0, NULL <unfinished ...>
+33685 17:20:02.948348 <... futex resumed>) = 0
+33686 17:20:02.948369 <... mq_timedsend resumed>) = 0
+33685 17:20:02.948411 futex(0x56e21ffb0690, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+33683 17:20:02.948442 <... mq_timedreceive resumed>, "SENSOR,1730000000,25.0,50.0\0", 256, NULL, {tv_sec=1793701203, tv_nsec=847321011}) = 28
+33686 17:20:02.948475 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=100000000} <unfinished ...>
+33685 17:20:02.948509 <... futex resumed>) = 0
+33683 17:20:02.948547 lseek(5, 0, SEEK_END <unfinished ...>
+33685 17:20:02.948691 mq_timedsend(4, "AVERAGE,25.00,50.00\0", 20, 0, NULL <unfinished ...>
+33683 17:20:02.948792 <... lseek resumed>) = 0
+33685 17:20:02.948822 <... mq_timedsend resumed>) = 0
+33683 17:20:02.948845 mq_timedreceive(4 <unfinished ...>
+33685 17:20:02.948866 futex(0x56e21ffb06d8, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 24, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+33683 17:20:02.948891 <... mq_timedreceive resumed>, "AVERAGE,25.00,50.00\0", 256, NULL, {tv_sec=1793701203, tv_nsec=948827127}) = 20
+33683 17:20:02.949005 lseek(5, 0, SEEK_END) = 0
+33683 17:20:02.949099 mq_timedreceive(4 <unfinished ...>
+33686 17:20:03.049106 <... clock_nanosleep resumed>, NULL) = 0
+33686 17:20:03.049902 openat(AT_FDCWD, "/tmp/sms_sensor_test.csv", O_RDONLY) = 6
+33686 17:20:03.050678 read(6, "1730000000,25,50\n", 127) = 17
+33686 17:20:03.051473 close(6)          = 0
+33686 17:20:03.052022 futex(0x56e21ffb06d8, FUTEX_WAKE_PRIVATE, 1) = 1
+33686 17:20:03.052216 mq_timedsend(4, "SENSOR,1730000000,25.0,50.0\0", 28, 0, NULL <unfinished ...>
+33685 17:20:03.052250 <... futex resumed>) = 0
+33686 17:20:03.052277 <... mq_timedsend resumed>) = 0
+33685 17:20:03.052554 futex(0x56e21ffb0690, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+33683 17:20:03.052701 <... mq_timedreceive resumed>, "SENSOR,1730000000,25.0,50.0\0", 256, NULL, {tv_sec=1793701203, tv_nsec=949083781}) = 28
+33686 17:20:03.052776 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=100000000} <unfinished ...>
+33685 17:20:03.052819 <... futex resumed>) = 0
+33685 17:20:03.052979 mq_timedsend(4, "AVERAGE,25.00,50.00\0", 20, 0, NULL <unfinished ...>
+33683 17:20:03.053097 lseek(5, 0, SEEK_END <unfinished ...>
+33685 17:20:03.053278 <... mq_timedsend resumed>) = 0
+33683 17:20:03.053308 <... lseek resumed>) = 0
+33685 17:20:03.053331 futex(0x56e21ffb06dc, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 25, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+33683 17:20:03.053437 mq_timedreceive(4, "AVERAGE,25.00,50.00\0", 256, NULL, {tv_sec=1793701204, tv_nsec=53384824}) = 20
+33683 17:20:03.053888 lseek(5, 0, SEEK_END) = 0
+33683 17:20:03.054231 mq_timedreceive(4 <unfinished ...>
+33686 17:20:03.153302 <... clock_nanosleep resumed>, NULL) = 0
+33686 17:20:03.153791 openat(AT_FDCWD, "/tmp/sms_sensor_test.csv", O_RDONLY) = 6
+33686 17:20:03.154740 read(6, "1730000000,25,50\n", 127) = 17
+33686 17:20:03.155383 close(6)          = 0
+33686 17:20:03.155935 futex(0x56e21ffb06dc, FUTEX_WAKE_PRIVATE, 1) = 1
+33685 17:20:03.156207 <... futex resumed>) = 0
+33686 17:20:03.156287 mq_timedsend(4, "SENSOR,1730000000,25.0,50.0\0", 28, 0, NULL <unfinished ...>
+33685 17:20:03.156341 futex(0x56e21ffb0690, FUTEX_WAKE_PRIVATE, 1) = 0
+33686 17:20:03.156453 <... mq_timedsend resumed>) = 0
+33686 17:20:03.156631 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=100000000} <unfinished ...>
+33685 17:20:03.156704 mq_timedsend(4, "AVERAGE,25.00,50.00\0", 20, 0, NULL <unfinished ...>
+33683 17:20:03.156745 <... mq_timedreceive resumed>, "SENSOR,1730000000,25.0,50.0\0", 256, NULL, {tv_sec=1793701204, tv_nsec=54178627}) = 28
+33685 17:20:03.156930 <... mq_timedsend resumed>) = 0
+33683 17:20:03.157024 lseek(5, 0, SEEK_END <unfinished ...>
+33685 17:20:03.157097 futex(0x56e21ffb06d8, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 26, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+33683 17:20:03.157298 <... lseek resumed>) = 0
+33683 17:20:03.157578 mq_timedreceive(4, "AVERAGE,25.00,50.00\0", 256, NULL, {tv_sec=1793701204, tv_nsec=157457287}) = 20
+33683 17:20:03.157898 lseek(5, 0, SEEK_END) = 0
+33683 17:20:03.158180 mq_timedreceive(4 <unfinished ...>
+33686 17:20:03.256941 <... clock_nanosleep resumed>, NULL) = 0
+33686 17:20:03.257237 openat(AT_FDCWD, "/tmp/sms_sensor_test.csv", O_RDONLY) = 6
+33686 17:20:03.257802 read(6, "1730000000,25,50\n", 127) = 17
+33686 17:20:03.258264 close(6)          = 0
+33686 17:20:03.258562 futex(0x56e21ffb06d8, FUTEX_WAKE_PRIVATE, 1) = 1
+33686 17:20:03.259082 mq_timedsend(4, "SENSOR,1730000000,25.0,50.0\0", 28, 0, NULL <unfinished ...>
+33685 17:20:03.259337 <... futex resumed>) = 0
+33686 17:20:03.259552 <... mq_timedsend resumed>) = 0
+33685 17:20:03.259690 futex(0x56e21ffb0690, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+33686 17:20:03.259749 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=100000000} <unfinished ...>
+33685 17:20:03.259847 <... futex resumed>) = 0
+33683 17:20:03.259979 <... mq_timedreceive resumed>, "SENSOR,1730000000,25.0,50.0\0", 256, NULL, {tv_sec=1793701204, tv_nsec=158062210}) = 28
+33685 17:20:03.260077 mq_timedsend(4, "AVERAGE,25.00,50.00\0", 20, 0, NULL <unfinished ...>
+33683 17:20:03.260250 lseek(5, 0, SEEK_END <unfinished ...>
+33685 17:20:03.260315 <... mq_timedsend resumed>) = 0
+33685 17:20:03.260502 futex(0x56e21ffb06dc, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 27, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+33683 17:20:03.260583 <... lseek resumed>) = 0
+33683 17:20:03.260856 mq_timedreceive(4, "AVERAGE,25.00,50.00\0", 256, NULL, {tv_sec=1793701204, tv_nsec=260723265}) = 20
+33683 17:20:03.261586 lseek(5, 0, SEEK_END) = 0
+33683 17:20:03.262188 mq_timedreceive(4 <unfinished ...>
+33686 17:20:03.360325 <... clock_nanosleep resumed>, NULL) = 0
+33686 17:20:03.361272 openat(AT_FDCWD, "/tmp/sms_sensor_test.csv", O_RDONLY) = 6
+33686 17:20:03.362474 read(6, "1730000000,25,50\n", 127) = 17
+33686 17:20:03.363074 close(6)          = 0
+33686 17:20:03.363789 futex(0x56e21ffb06dc, FUTEX_WAKE_PRIVATE, 1) = 1
+33685 17:20:03.364162 <... futex resumed>) = 0
+33686 17:20:03.364220 mq_timedsend(4, "SENSOR,1730000000,25.0,50.0\0", 28, 0, NULL) = 0
+33685 17:20:03.364583 futex(0x56e21ffb0690, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+33683 17:20:03.364668 <... mq_timedreceive resumed>, "SENSOR,1730000000,25.0,50.0\0", 256, NULL, {tv_sec=1793701204, tv_nsec=262071673}) = 28
+33686 17:20:03.364760 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=0, tv_nsec=100000000} <unfinished ...>
+33685 17:20:03.364834 <... futex resumed>) = 0
+33683 17:20:03.364876 lseek(5, 0, SEEK_END <unfinished ...>
+33685 17:20:03.365109 mq_timedsend(4, "AVERAGE,25.00,50.00\0", 20, 0, NULL <unfinished ...>
+33683 17:20:03.365231 <... lseek resumed>) = 0
+33683 17:20:03.365323 mq_timedreceive(4 <unfinished ...>
+33685 17:20:03.365368 <... mq_timedsend resumed>) = 0
+33683 17:20:03.365443 <... mq_timedreceive resumed>, "AVERAGE,25.00,50.00\0", 256, NULL, {tv_sec=1793701204, tv_nsec=365289106}) = 20
+33685 17:20:03.365558 futex(0x56e21ffb06d8, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 28, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+33683 17:20:03.365620 lseek(5, 0, SEEK_END) = 0
+33683 17:20:03.366074 mq_timedreceive(4 <unfinished ...>
+33682 17:20:03.392499 <... clock_nanosleep resumed>, 0x7ffd2f436540) = 0
+33682 17:20:03.393141 futex(0x56e21ffb06d8, FUTEX_WAKE_PRIVATE, 2147483647) = 1
+33685 17:20:03.393416 <... futex resumed>) = 0
+33682 17:20:03.393595 futex(0x7e83b67fdce8, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 2, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+33685 17:20:03.393645 futex(0x56e21ffb0690, FUTEX_WAKE_PRIVATE, 1) = 0
+33685 17:20:03.394071 mq_timedsend(4, "Processor thread stopped\0", 25, 0, NULL) = 0
+33683 17:20:03.394446 <... mq_timedreceive resumed>, "Processor thread stopped\0", 256, NULL, {tv_sec=1793701204, tv_nsec=365999313}) = 25
+33685 17:20:03.394653 rt_sigprocmask(SIG_BLOCK, ~[RT_1], NULL, 8) = 0
+33683 17:20:03.394737 lseek(5, 0, SEEK_END <unfinished ...>
+33685 17:20:03.394767 madvise(0x7e83addff000, 8368128, MADV_DONTNEED) = 0
+33683 17:20:03.394853 <... lseek resumed>) = 0
+33685 17:20:03.394880 exit(0)           = ?
+33685 17:20:03.395048 +++ exited with 0 +++
+33683 17:20:03.395129 write(5, "1793701200,Sensor thread started"..., 2186) = 2186
+33683 17:20:03.395702 close(5)          = 0
+33683 17:20:03.396219 rt_sigprocmask(SIG_BLOCK, ~[RT_1], NULL, 8) = 0
+33683 17:20:03.397010 madvise(0x7e83b6fff000, 8368128, MADV_DONTNEED) = 0
+33683 17:20:03.397354 exit(0)           = ?
+33683 17:20:03.397598 +++ exited with 0 +++
+33686 17:20:03.465309 <... clock_nanosleep resumed>, NULL) = 0
+33686 17:20:03.465842 mq_timedsend(4, "Sensor thread stopped\0", 22, 0, NULL) = 0
+33686 17:20:03.466260 rt_sigprocmask(SIG_BLOCK, ~[RT_1], NULL, 8) = 0
+33686 17:20:03.466814 madvise(0x7e83b5ffd000, 8368128, MADV_DONTNEED) = 0
+33686 17:20:03.467121 exit(0)           = ?
+33686 17:20:03.467467 +++ exited with 0 +++
+33682 17:20:03.467515 <... futex resumed>) = 0
+33682 17:20:03.467731 mq_timedsend(3, "__SMS_STOP__\0", 13, 0, NULL) = 0
+33684 17:20:03.468068 <... mq_timedreceive resumed>, "__SMS_STOP__\0", 256, NULL, NULL) = 13
+33682 17:20:03.468167 futex(0x7e83b6ffece8, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 2, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+33684 17:20:03.468212 rt_sigprocmask(SIG_BLOCK, ~[RT_1] <unfinished ...>
+33682 17:20:03.468257 <... futex resumed>) = -1 EAGAIN (Resource temporarily unavailable)
+33682 17:20:03.468326 futex(0x7e83b6ffece8, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 1, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+33684 17:20:03.468352 <... rt_sigprocmask resumed>, NULL, 8) = 0
+33684 17:20:03.468518 madvise(0x7e83b67fe000, 8368128, MADV_DONTNEED) = 0
+33684 17:20:03.468916 exit(0)           = ?
+33682 17:20:03.469259 <... futex resumed>) = 0
+33684 17:20:03.469304 +++ exited with 0 +++
+33682 17:20:03.469332 close(3)          = 0
+33682 17:20:03.469517 mq_unlink("sms_alert_queue") = 0
+33682 17:20:03.469754 close(4)          = 0
+33682 17:20:03.469886 mq_unlink("sms_log_queue") = 0
+33682 17:20:03.469982 write(1, "SMS Sensor Monitoring System\nInt"..., 2849) = 2849
+33682 17:20:03.470094 exit_group(0)     = ?
+33682 17:20:03.470586 +++ exited with 0 +++

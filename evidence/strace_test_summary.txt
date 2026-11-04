@@ -1,0 +1,22 @@
+Assignment 02 - SMS Sensor Monitoring System
+Test: strace system call tracing
+
+Command:
+strace -f -tt -o logs/strace_sms_app.log \
+  ./test_host/sms_app_test -i 100 -t 3 -v
+
+Results:
+- openat: opened the sensor test CSV and log file.
+- read: successfully read sensor CSV data.
+- write: printed application output.
+- futex: used for thread synchronization.
+- clock_nanosleep: used for periodic waiting.
+- mq_open: created/opened POSIX message queues.
+- mq_timedsend: successfully sent messages.
+- mq_timedreceive: successfully received messages.
+- mq_unlink: removed message queue names at shutdown.
+- exit_group: application exited normally.
+
+Note:
+The ioctl error is expected when testing with a regular
+CSV file instead of the actual sensor device.

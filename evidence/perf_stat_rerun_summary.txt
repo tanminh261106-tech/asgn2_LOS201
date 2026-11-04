@@ -1,0 +1,17 @@
+Assignment 02 - SMS Sensor Monitoring System
+Test: perf stat
+
+Command:
+perf stat -o logs/perf_stat_rerun.log \
+  ./test_host/sms_app_test -i 100 -t 3 -v
+
+Observed:
+Elapsed time: 3.012050093 seconds
+User time: 0.001971 seconds
+System time: 0.011826 seconds
+
+Limitation:
+CPU cycle counters were reported as not supported.
+Do not infer CPU cycle counts from this run.
+The application used a CSV test file on the Ubuntu host.
+The ioctl warning is expected for a regular file.

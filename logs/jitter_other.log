@@ -1,0 +1,10 @@
+mlockall: success
+
+=== Real-Time Jitter Results ===
+Policy: OTHER
+Samples: 1000
+Period: 1 ms
+Minimum jitter: 52906 ns
+Maximum jitter: 990504 ns
+Average jitter: 70758.65 ns
+CSV output: output/jitter_other.csv

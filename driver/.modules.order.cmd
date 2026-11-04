@@ -1,0 +1,1 @@
+cmd_/home/minhltse200684/embedded_asgn02/driver/modules.order := {   echo /home/minhltse200684/embedded_asgn02/driver/sms_sensor.ko; :; } | awk '!x[$$0]++' - > /home/minhltse200684/embedded_asgn02/driver/modules.order

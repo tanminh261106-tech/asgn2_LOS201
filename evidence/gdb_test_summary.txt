@@ -1,0 +1,26 @@
+Assignment 02 - SMS Sensor Monitoring System
+Test: GDB debugging
+
+Debug executable:
+test_host/sms_app_debug
+
+Breakpoints:
+1. main
+2. sensor_thread
+3. processor_thread
+4. alert_thread
+5. logger_thread
+
+Results:
+- Breakpoint at main was reached.
+- Breakpoint at logger_thread was reached.
+- Breakpoint at alert_thread was reached.
+- Breakpoint at processor_thread was reached.
+- Breakpoint at sensor_thread was reached.
+- info threads was used to inspect active threads.
+- bt was used to inspect thread stack traces.
+- The application exited normally in the completed run.
+
+Note:
+The ioctl SMS_SET_INTERVAL error is expected when using
+a regular CSV file instead of the actual sensor device.

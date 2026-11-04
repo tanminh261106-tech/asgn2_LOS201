@@ -1,0 +1,17 @@
+#!/bin/sh
+
+mount -t devtmpfs devtmpfs /dev
+mount -t proc proc /proc
+mount -t sysfs sysfs /sys
+
+mkdir -p /dev/pts /dev/shm
+echo /sbin/mdev > /proc/sys/kernel/hotplug
+mdev -s
+
+echo
+echo "=================================="
+echo " Assignment 02 - SMS Sensor System"
+echo "=================================="
+echo
+
+exec /bin/sh

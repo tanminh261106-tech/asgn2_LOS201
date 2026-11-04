@@ -1,0 +1,21 @@
+Assignment 02 - SMS Sensor Monitoring System
+Test: Valgrind Memcheck
+
+Command:
+valgrind --tool=memcheck --leak-check=full \
+  --show-leak-kinds=all --track-origins=yes \
+  --log-file=logs/valgrind_sms_app.log \
+  ./output/sms_app -i 500 -t 5 -v
+
+Result:
+- Total heap allocations: 10
+- Total heap frees: 10
+- Heap memory in use at exit: 0 bytes
+- Memory errors: 0
+- Memory leaks: none detected
+
+Limitation:
+The application exited early because /dev/sms_sensor
+was unavailable on the Ubuntu host.
+The complete multithreaded runtime was not validated
+by this Valgrind run.

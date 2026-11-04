@@ -1,0 +1,10 @@
+mlockall: success
+
+=== Real-Time Jitter Results ===
+Policy: FIFO
+Samples: 1000
+Period: 1 ms
+Minimum jitter: 7716 ns
+Maximum jitter: 100349 ns
+Average jitter: 33440.09 ns
+CSV output: /tmp/jitter_fifo_chrt.csv

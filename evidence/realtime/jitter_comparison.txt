@@ -1,0 +1,32 @@
+Assignment 02 - SMS Sensor Monitoring System
+Real-Time Jitter Comparison
+
+Test configuration:
+- Samples per policy: 1000
+- Period: 1 ms
+- Clock: CLOCK_MONOTONIC
+- Sleep method: clock_nanosleep with TIMER_ABSTIME
+- Memory locking: mlockall(MCL_CURRENT | MCL_FUTURE)
+
+SCHED_OTHER:
+- Minimum jitter: 52906 ns
+- Maximum jitter: 990504 ns
+- Average jitter: 70758.65 ns
+- CSV rows including header: 1001
+
+SCHED_FIFO:
+- Priority: 50
+- Minimum jitter: 2565 ns
+- Maximum jitter: 99551 ns
+- Average jitter: 16222.84 ns
+- CSV rows including header: 1001
+
+Comparison:
+In this test run, SCHED_FIFO had lower minimum, maximum,
+and average jitter than SCHED_OTHER.
+Average jitter was approximately 77.1% lower with SCHED_FIFO.
+
+Limitations:
+Measurements were performed on the Ubuntu host.
+They are not measurements from the QEMU target.
+Results can vary with system load and scheduling conditions.

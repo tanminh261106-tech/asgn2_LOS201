@@ -1,0 +1,1 @@
+cmd_/home/minhltse200684/embedded_asgn02/driver/sms_sensor.mod := { echo  /home/minhltse200684/embedded_asgn02/driver/sms_sensor.o;  echo; } > /home/minhltse200684/embedded_asgn02/driver/sms_sensor.mod

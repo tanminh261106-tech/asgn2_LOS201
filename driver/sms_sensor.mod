@@ -1,0 +1,2 @@
+/home/minhltse200684/embedded_asgn02/driver/sms_sensor.o
+

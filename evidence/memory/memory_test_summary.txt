@@ -1,0 +1,25 @@
+Assignment 02 - SMS Sensor Monitoring System
+Test: Host process memory sampling
+
+Environment:
+Ubuntu host, test_host/sms_app_test
+CSV test input: /tmp/sms_sensor_test.csv
+Application duration: 60 seconds
+
+Measurements:
+Time 5 seconds:
+VmSize: 166636 kB
+VmRSS: 2092 kB
+
+Time 30 seconds:
+VmSize: 166636 kB
+VmRSS: 2092 kB
+
+Time 55 seconds:
+VmSize: 166636 kB
+VmRSS: 2092 kB
+
+Observation:
+VmSize and VmRSS remained unchanged across the three
+recorded samples. This result applies to this test run
+and does not alone prove absence of all memory leaks.

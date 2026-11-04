@@ -1,0 +1,20 @@
+JITTER HISTOGRAM
+Source: existing jitter CSV files
+Unit: microseconds (us); raw jitter values are in nanoseconds (ns)
+
+Policy: SCHED_OTHER
+CSV: evidence/realtime/jitter_other.csv
+Valid samples: 1000
+0–100 us: 970 samples (97.00%)
+100–500 us: 28 samples (2.80%)
+500–1000 us: 2 samples (0.20%)
+>1000 us: 0 samples (0.00%)
+
+Policy: SCHED_FIFO
+CSV: evidence/realtime/jitter_fifo.csv
+Valid samples: 1000
+0–100 us: 1000 samples (100.00%)
+100–500 us: 0 samples (0.00%)
+500–1000 us: 0 samples (0.00%)
+>1000 us: 0 samples (0.00%)
+

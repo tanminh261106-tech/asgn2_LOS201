@@ -1,0 +1,14 @@
+Assignment 02 - SMS Sensor Monitoring System
+Test: Log Rotation
+Environment: QEMU ARMv7, Linux 5.15.0
+
+Command:
+dd if=/dev/zero of=/tmp/sms.log bs=1024 count=1025
+
+After running sms_app:
+-rw-r--r-- 1 root root 2.3K /tmp/sms.log
+-rw-r--r-- 1 root root 1.0M /tmp/sms.log.1
+
+Result: PASS
+The previous log was rotated to sms.log.1.
+A new sms.log was created for subsequent logging.

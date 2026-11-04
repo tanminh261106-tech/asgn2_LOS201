@@ -1,0 +1,16 @@
+
+===== SCHED_OTHER =====
+Samples: 1000
+Minimum: 52906 ns
+Maximum: 990504 ns
+Average: 70758.65 ns
+Median: 67540.00 ns
+P99: 136218 ns
+
+===== SCHED_FIFO =====
+Samples: 1000
+Minimum: 2565 ns
+Maximum: 99551 ns
+Average: 16222.84 ns
+Median: 17629.50 ns
+P99: 29479 ns

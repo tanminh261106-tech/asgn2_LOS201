@@ -1,0 +1,14 @@
+# started on Tue Nov  3 17:25:05 2026
+
+
+ Performance counter stats for './test_host/sms_app_test -i 100 -t 3 -v':
+
+   <not supported>      cpu_core/cpu-cycles/u            #      nan GHz  cycles_frequency     
+   <not supported>      cpu_atom/cpu-cycles/u            #      nan GHz  cycles_frequency     
+
+       3.011305042 seconds time elapsed
+
+       0.006511000 seconds user
+       0.006511000 seconds sys
+
+
